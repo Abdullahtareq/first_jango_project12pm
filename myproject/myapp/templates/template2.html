@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello 12pm class</h1>
+    <h2>Welcome {{username}} </h2>
+    <p>age: {{age}}</p>
+    <a href="http://portal.ku.edu.kw"> Portal</a> Search
+
+    <h3>CBA MAJORS: </h3>
+    <ul>
+    {% for x in majors %}
+        {{x}}
+        {% endfor %}
+
+     </ul>
+
+    <table>
+        <tr>
+            <th>item 1</th>
+            <th>item 2</th>
+        </tr>
+        <tr>
+            <th>item 3</th>
+            <td>item 4</td>
+        </tr>
+        <tr>
+            <th>item 5</th>
+            <td>item 6</td>
+        </tr>
+    </table>
+
+    <form action="" method="get">
+
+        <label for="username">Enter Username: </label>
+        <input type="text" name="username"> <br>
+
+        <label for="pwd">Enter password: </label>
+        <input type="password" name="pwd" id = ""> <br>
+
+        <input type="button" value="Save">
+    </form>
+</body>
+</html>
