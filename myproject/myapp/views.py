@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def test_view(request):
-    print("request: ", request.GET["pwd"])
+    print("request: ", request.GET.get("pwd"))
     
 
     c = {}
